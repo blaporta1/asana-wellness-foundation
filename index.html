@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Asana Wellness Foundation exists to democratize access to yoga and holistic wellness practices for underserved and economically disadvantaged communities." />
+  <title>Asana Wellness Foundation</title>
+
+  <!-- Google Fonts: Philosopher + Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome 6 CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="Asana Wellness Foundation — return to top">
+          <span class="logo-icon" aria-hidden="true">
+            <img src="Logo/Icon/Icon-04.png" alt="" width="40" height="40" class="logo-img">
+          </span>
+          <span class="logo-text">Asana Wellness Foundation</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#programs" class="nav-link">What We Do</a></li>
+          <li><a href="#serve" class="nav-link">Who We Serve</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#values" class="nav-link">Values</a></li>
+          <li><a href="#involved" class="nav-link nav-link--cta">Get Involved</a></li>
+        </ul>
+
+        <!-- Hamburger Button (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+      </div><!-- /.nav-container -->
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+        <ul class="mobile-nav-links" role="list">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#programs" class="mobile-nav-link">What We Do</a></li>
+          <li><a href="#serve" class="mobile-nav-link">Who We Serve</a></li>
+          <li><a href="#impact" class="mobile-nav-link">Impact</a></li>
+          <li><a href="#values" class="mobile-nav-link">Values</a></li>
+          <li><a href="#involved" class="mobile-nav-link mobile-nav-link--cta">Get Involved</a></li>
+        </ul>
+      </div><!-- /.mobile-menu -->
+
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ===== 1. HERO ===== -->
+    <section id="hero" class="hero-section" aria-label="Hero — Wellness Is a Human Right">
+
+      <!-- Decorative floating mandala SVG -->
+      <div class="hero-mandala" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="mandala-svg">
+          <!-- Outer rings -->
+          <circle cx="200" cy="200" r="190" stroke="#FBB040" stroke-width="0.8" fill="none" opacity="0.15"/>
+          <circle cx="200" cy="200" r="165" stroke="#660591" stroke-width="0.8" fill="none" opacity="0.2"/>
+          <circle cx="200" cy="200" r="140" stroke="#FBB040" stroke-width="0.8" fill="none" opacity="0.18"/>
+          <circle cx="200" cy="200" r="115" stroke="#660591" stroke-width="1" fill="none" opacity="0.22"/>
+          <circle cx="200" cy="200" r="90" stroke="#FBB040" stroke-width="1" fill="none" opacity="0.2"/>
+          <!-- Petal-like lines -->
+          <line x1="200" y1="10" x2="200" y2="390" stroke="#FBB040" stroke-width="0.5" opacity="0.12"/>
+          <line x1="10" y1="200" x2="390" y2="200" stroke="#FBB040" stroke-width="0.5" opacity="0.12"/>
+          <line x1="55" y1="55" x2="345" y2="345" stroke="#660591" stroke-width="0.5" opacity="0.14"/>
+          <line x1="345" y1="55" x2="55" y2="345" stroke="#660591" stroke-width="0.5" opacity="0.14"/>
+          <line x1="128" y1="10" x2="272" y2="390" stroke="#FBB040" stroke-width="0.4" opacity="0.1"/>
+          <line x1="272" y1="10" x2="128" y2="390" stroke="#FBB040" stroke-width="0.4" opacity="0.1"/>
+          <line x1="10" y1="128" x2="390" y2="272" stroke="#660591" stroke-width="0.4" opacity="0.1"/>
+          <line x1="10" y1="272" x2="390" y2="128" stroke="#660591" stroke-width="0.4" opacity="0.1"/>
+          <!-- Lotus petals (8 petals) -->
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#660591" opacity="0.25" transform="rotate(0 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#FBB040" opacity="0.15" transform="rotate(45 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#660591" opacity="0.25" transform="rotate(90 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#FBB040" opacity="0.15" transform="rotate(135 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#660591" opacity="0.25" transform="rotate(180 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#FBB040" opacity="0.15" transform="rotate(225 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#660591" opacity="0.25" transform="rotate(270 200 200)"/>
+          <ellipse cx="200" cy="135" rx="18" ry="42" fill="#FBB040" opacity="0.15" transform="rotate(315 200 200)"/>
+          <!-- Center dot -->
+          <circle cx="200" cy="200" r="8" fill="#FBB040" opacity="0.5"/>
+          <circle cx="200" cy="200" r="4" fill="#FBB040" opacity="0.8"/>
+        </svg>
+      </div><!-- /.hero-mandala -->
+
+      <div class="hero-content">
+        <p class="hero-eyebrow fade-in">Asana Wellness Foundation</p>
+        <h1 class="hero-heading fade-in">Wellness Is a Human Right,<br class="heading-break" /> Not a Privilege</h1>
+        <p class="hero-subheading fade-in">
+          The Asana Wellness Foundation exists to democratize access to yoga and holistic wellness
+          practices for underserved and economically disadvantaged communities, fostering physical
+          health, mental resilience, and spiritual well-being as fundamental human rights rather than privileges.
+        </p>
+        <div class="hero-ctas fade-in">
+          <a href="#involved" class="btn btn--gold" aria-label="Join a class with Asana Wellness Foundation">Join a Class</a>
+          <a href="#involved" class="btn btn--outline-white" aria-label="Support the Asana Wellness Foundation mission">Support Our Mission</a>
+        </div>
+      </div><!-- /.hero-content -->
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span class="scroll-dot"></span>
+      </div>
+
+    </section><!-- /#hero -->
+
+
+    <!-- ===== 2. ABOUT US ===== -->
+    <section id="about" class="about-section section-padding" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-label" aria-hidden="true">Who We Are</div>
+        <h2 class="section-title section-title--dark fade-in" id="about-heading">About Us</h2>
+
+        <div class="about-grid">
+
+          <!-- Mission Column -->
+          <article class="about-card fade-in" aria-label="Our Mission">
+            <div class="about-icon" aria-hidden="true">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3 class="about-card-heading">Our Mission</h3>
+            <p class="about-card-text">
+              The Asana Wellness Foundation exists to democratize access to yoga and holistic wellness
+              practices for underserved and economically disadvantaged communities, fostering physical
+              health, mental resilience, and spiritual well-being as fundamental human rights rather than privileges.
+            </p>
+            <p class="about-card-text">
+              We believe that every individual, regardless of socioeconomic status, deserves the transformative
+              benefits of yoga — a practice that cultivates mind-body harmony, reduces stress, builds strength,
+              and promotes overall wellness. Through accessible, culturally sensitive programming delivered
+              directly within underserved communities, we break down barriers of cost, location, and social
+              stigma that prevent vulnerable populations from accessing these life-enhancing practices.
+            </p>
+          </article>
+
+          <!-- Vision Column -->
+          <article class="about-card fade-in" aria-label="Our Vision">
+            <div class="about-icon about-icon--purple" aria-hidden="true">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="about-card-heading">Our Vision</h3>
+            <p class="about-card-text">
+              We envision a world where zip code does not determine wellness outcomes — where every person
+              in every community has the knowledge, resources, and support to cultivate physical vitality, mental
+              clarity, and inner peace through yoga and mindful movement.
+            </p>
+            <p class="about-card-text">
+              By expanding our reach, deepening our impact, and advocating for systemic change in how society
+              values and funds preventive wellness for vulnerable populations, the Asana Wellness Foundation
+              strives to be a catalyst for health equity and social justice — one breath, one pose, one community
+              at a time.
+            </p>
+          </article>
+
+        </div><!-- /.about-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#about -->
+
+
+    <!-- ===== 3. WHAT WE DO ===== -->
+    <section id="programs" class="programs-section section-padding" aria-labelledby="programs-heading">
+      <div class="container">
+
+        <div class="section-label section-label--gold" aria-hidden="true">Our Programs</div>
+        <h2 class="section-title section-title--gold fade-in" id="programs-heading">What We Do</h2>
+        <p class="section-intro section-intro--light fade-in">
+          We bring the transformative power of yoga directly to the communities that need it most,
+          removing every barrier between people and their wellness.
+        </p>
+
+        <div class="programs-grid">
+
+          <!-- Card 1: Community-Based Programming -->
+          <article class="program-card fade-in" aria-label="Community-Based Programming">
+            <div class="program-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="program-card-heading">Community-Based Programming</h3>
+            <p class="program-card-text">
+              We bring certified yoga instructors directly into low-income neighborhoods, community centers,
+              schools, shelters, and public spaces — eliminating transportation and facility barriers.
+            </p>
+          </article>
+
+          <!-- Card 2: Free & Subsidized Classes -->
+          <article class="program-card fade-in" aria-label="Free and Subsidized Classes">
+            <div class="program-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3 class="program-card-heading">Free &amp; Subsidized Classes</h3>
+            <p class="program-card-text">
+              We offer yoga instruction at no cost to participants, ensuring financial constraints never
+              prevent someone from experiencing the healing power of yoga.
+            </p>
+          </article>
+
+          <!-- Card 3: Inclusive & Adaptive Yoga -->
+          <article class="program-card fade-in" aria-label="Inclusive and Adaptive Yoga">
+            <div class="program-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-hands-holding-heart"></i>
+            </div>
+            <h3 class="program-card-heading">Inclusive &amp; Adaptive Yoga</h3>
+            <p class="program-card-subtitle">Trauma-informed · Chair yoga · Youth yoga · Veterans · Recovery · Formerly incarcerated</p>
+            <p class="program-card-text">
+              We tailor our programs to meet diverse populations where they are — offering specialized sessions
+              for abuse survivors, seniors, at-risk children, veterans, formerly incarcerated individuals,
+              and those in recovery.
+            </p>
+          </article>
+
+          <!-- Card 4: Holistic Wellness Education -->
+          <article class="program-card fade-in" aria-label="Holistic Wellness Education">
+            <div class="program-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="program-card-heading">Holistic Wellness Education</h3>
+            <p class="program-card-subtitle">Breathwork · Meditation · Nutrition basics · Stress management</p>
+            <p class="program-card-text">
+              Beyond physical practice, we provide education on breathwork, meditation, nutrition basics,
+              and stress management techniques that participants can integrate into daily life.
+            </p>
+          </article>
+
+          <!-- Card 5: Instructor Training & Employment -->
+          <article class="program-card fade-in" aria-label="Instructor Training and Employment">
+            <div class="program-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-chalkboard-teacher"></i>
+            </div>
+            <h3 class="program-card-heading">Instructor Training &amp; Employment</h3>
+            <p class="program-card-text">
+              We create pathways for community members to become certified yoga instructors, fostering
+              economic opportunity while ensuring our teachers understand the lived experiences of those
+              they serve.
+            </p>
+          </article>
+
+        </div><!-- /.programs-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#programs -->
+
+
+    <!-- ===== 4. WHO WE SERVE ===== -->
+    <section id="serve" class="serve-section section-padding" aria-labelledby="serve-heading">
+      <div class="container">
+
+        <div class="section-label" aria-hidden="true">Our Community</div>
+        <h2 class="section-title section-title--purple fade-in" id="serve-heading">Who We Serve</h2>
+        <p class="section-intro fade-in">
+          Our programs are designed for those who have been systematically excluded from wellness spaces.
+          Every person deserves access to healing.
+        </p>
+
+        <div class="serve-grid">
+
+          <article class="serve-tile serve-tile--1 fade-in" aria-label="Low-Income Families">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-house-heart"></i></div>
+            <h3 class="serve-tile-name">Low-Income Families</h3>
+            <p class="serve-tile-desc">Individuals and families living below the poverty line</p>
+          </article>
+
+          <article class="serve-tile serve-tile--2 fade-in" aria-label="Underserved Communities">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-city"></i></div>
+            <h3 class="serve-tile-name">Underserved Communities</h3>
+            <p class="serve-tile-desc">Residents of under-resourced urban and rural areas</p>
+          </article>
+
+          <article class="serve-tile serve-tile--3 fade-in" aria-label="Youth and Children">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-child-reaching"></i></div>
+            <h3 class="serve-tile-name">Youth &amp; Children</h3>
+            <p class="serve-tile-desc">Youth in under-resourced schools and after-school programs</p>
+          </article>
+
+          <article class="serve-tile serve-tile--4 fade-in" aria-label="Homeless Individuals">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-bed"></i></div>
+            <h3 class="serve-tile-name">Homeless Individuals</h3>
+            <p class="serve-tile-desc">Individuals and families in transitional housing and shelters</p>
+          </article>
+
+          <article class="serve-tile serve-tile--5 fade-in" aria-label="Trauma Survivors">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3 class="serve-tile-name">Trauma Survivors</h3>
+            <p class="serve-tile-desc">Survivors of trauma, abuse, and violence seeking healing</p>
+          </article>
+
+          <article class="serve-tile serve-tile--6 fade-in" aria-label="Seniors">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-person-cane"></i></div>
+            <h3 class="serve-tile-name">Seniors</h3>
+            <p class="serve-tile-desc">Older adults with limited mobility and fixed incomes</p>
+          </article>
+
+          <article class="serve-tile serve-tile--7 fade-in" aria-label="Individuals in Recovery">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <h3 class="serve-tile-name">Individuals in Recovery</h3>
+            <p class="serve-tile-desc">People in recovery from substance abuse finding strength</p>
+          </article>
+
+          <article class="serve-tile serve-tile--8 fade-in" aria-label="Veterans with PTSD">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="serve-tile-name">Veterans with PTSD</h3>
+            <p class="serve-tile-desc">Veterans coping with PTSD and reintegration challenges</p>
+          </article>
+
+          <article class="serve-tile serve-tile--9 fade-in" aria-label="Formerly Incarcerated">
+            <div class="serve-tile-icon" aria-hidden="true"><i class="fa-solid fa-arrows-to-circle"></i></div>
+            <h3 class="serve-tile-name">Formerly Incarcerated</h3>
+            <p class="serve-tile-desc">Individuals rebuilding their lives and reclaiming their futures</p>
+          </article>
+
+        </div><!-- /.serve-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#serve -->
+
+
+    <!-- ===== 5. IMPACT ===== -->
+    <section id="impact" class="impact-section section-padding" aria-labelledby="impact-heading">
+      <div class="container">
+
+        <div class="section-label section-label--gold" aria-hidden="true">By the Numbers</div>
+        <h2 class="section-title section-title--gold fade-in" id="impact-heading">Our Impact</h2>
+        <p class="section-intro section-intro--light fade-in">
+          We measure success not merely in classes delivered, but in lives transformed.
+        </p>
+
+        <!-- Stats Row -->
+        <div class="impact-stats fade-in">
+          <div class="impact-stat">
+            <span class="impact-stat-number" data-target="500" data-suffix="+">0</span>
+            <span class="impact-stat-label">Participants Served</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-number" data-target="2000" data-suffix="+">0</span>
+            <span class="impact-stat-label">Classes Delivered</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-number" data-target="12" data-suffix="">0</span>
+            <span class="impact-stat-label">Community Partners</span>
+          </div>
+          <div class="impact-stat">
+            <span class="impact-stat-number" data-target="9" data-suffix="">0</span>
+            <span class="impact-stat-label">Populations Served</span>
+          </div>
+        </div><!-- /.impact-stats -->
+
+        <!-- Impact Cards -->
+        <div class="impact-grid">
+
+          <article class="impact-card fade-in" aria-label="Physical Health impact">
+            <div class="impact-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3 class="impact-card-heading">Physical Health</h3>
+            <p class="impact-card-text">Reducing chronic pain and improving mobility, flexibility, strength, and cardiovascular health.</p>
+          </article>
+
+          <article class="impact-card fade-in" aria-label="Mental Wellness impact">
+            <div class="impact-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="impact-card-heading">Mental Wellness</h3>
+            <p class="impact-card-text">Building resilience and emotional regulation — decreasing anxiety, depression, and stress.</p>
+          </article>
+
+          <article class="impact-card fade-in" aria-label="Community Connection impact">
+            <div class="impact-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3 class="impact-card-heading">Community Connection</h3>
+            <p class="impact-card-text">Fostering belonging and social support — reducing isolation and strengthening social bonds.</p>
+          </article>
+
+          <article class="impact-card fade-in" aria-label="Empowerment impact">
+            <div class="impact-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="impact-card-heading">Empowerment</h3>
+            <p class="impact-card-text">Restoring agency and self-worth — improving self-esteem and sustainable wellness practices.</p>
+          </article>
+
+          <article class="impact-card fade-in" aria-label="Ripple Effects impact">
+            <div class="impact-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <h3 class="impact-card-heading">Ripple Effects</h3>
+            <p class="impact-card-text">Transforming families and neighborhoods as participants share practices and inspire communities.</p>
+          </article>
+
+        </div><!-- /.impact-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#impact -->
+
+
+    <!-- ===== 6. CORE VALUES ===== -->
+    <section id="values" class="values-section section-padding" aria-labelledby="values-heading">
+      <div class="container">
+
+        <div class="section-label" aria-hidden="true">What Guides Us</div>
+        <h2 class="section-title section-title--dark fade-in" id="values-heading">Our Core Values</h2>
+        <p class="section-intro fade-in">
+          These principles are the foundation of everything we do — guiding every class, every partnership,
+          and every decision we make.
+        </p>
+
+        <div class="values-grid">
+
+          <article class="value-card fade-in" aria-label="Equity and Access value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Equity &amp; Access</h3>
+              <p class="value-card-text">Wellness is a right, not a luxury. We actively dismantle barriers that exclude marginalized communities from self-care practices.</p>
+            </div>
+          </article>
+
+          <article class="value-card fade-in" aria-label="Dignity and Respect value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-hands-praying"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Dignity &amp; Respect</h3>
+              <p class="value-card-text">We honor each participant's journey, meeting them without judgment and recognizing their inherent worth.</p>
+            </div>
+          </article>
+
+          <article class="value-card fade-in" aria-label="Cultural Humility value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Cultural Humility</h3>
+              <p class="value-card-text">We acknowledge yoga's ancient roots while adapting practices to be culturally relevant and respectful of diverse backgrounds and belief systems.</p>
+            </div>
+          </article>
+
+          <article class="value-card fade-in" aria-label="Community-Centered value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-circle-nodes"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Community-Centered</h3>
+              <p class="value-card-text">Our programming is designed with — not for — the communities we serve, incorporating their voices, needs, and wisdom.</p>
+            </div>
+          </article>
+
+          <article class="value-card fade-in" aria-label="Sustainability value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Sustainability</h3>
+              <p class="value-card-text">We build long-term capacity within communities rather than creating dependency, empowering individuals to become wellness ambassadors.</p>
+            </div>
+          </article>
+
+          <article class="value-card fade-in" aria-label="Evidence-Based value">
+            <div class="value-card-icon" aria-hidden="true"><i class="fa-solid fa-microscope"></i></div>
+            <div class="value-card-content">
+              <h3 class="value-card-name">Evidence-Based</h3>
+              <p class="value-card-text">We ground our work in research demonstrating yoga's therapeutic benefits while remaining open to the wisdom of lived experience.</p>
+            </div>
+          </article>
+
+        </div><!-- /.values-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#values -->
+
+
+    <!-- ===== 7. GET INVOLVED ===== -->
+    <section id="involved" class="involved-section section-padding" aria-labelledby="involved-heading">
+      <div class="container">
+
+        <div class="section-label section-label--gold" aria-hidden="true">Take Action</div>
+        <h2 class="section-title section-title--gold fade-in" id="involved-heading">Get Involved</h2>
+        <p class="section-intro section-intro--light fade-in">
+          Whether you give your time, your resources, or your network — your involvement expands access to
+          wellness for those who need it most.
+        </p>
+
+        <div class="involved-grid">
+
+          <!-- Volunteer Card -->
+          <article class="involved-card fade-in" aria-label="Volunteer with Asana Wellness Foundation">
+            <div class="involved-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-hands-clapping"></i>
+            </div>
+            <h3 class="involved-card-heading">Volunteer</h3>
+            <p class="involved-card-text">
+              Share your skills and time to expand our reach. From teaching yoga to supporting operations,
+              volunteers are the heartbeat of our mission.
+            </p>
+            <a href="#" class="btn btn--outline-gold" aria-label="Become a volunteer with Asana Wellness Foundation">Become a Volunteer</a>
+          </article>
+
+          <!-- Donate Card (featured) -->
+          <article class="involved-card involved-card--featured fade-in" aria-label="Donate to Asana Wellness Foundation">
+            <div class="involved-card-badge" aria-hidden="true">Make an Impact</div>
+            <div class="involved-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3 class="involved-card-heading">Donate</h3>
+            <p class="involved-card-text">
+              Your gift makes wellness accessible to those who need it most. Every dollar funds free classes,
+              instructor training, and life-changing programming.
+            </p>
+            <a href="#" class="btn btn--gold" aria-label="Donate to Asana Wellness Foundation">Donate Now</a>
+          </article>
+
+          <!-- Partner Card -->
+          <article class="involved-card fade-in" aria-label="Partner with Asana Wellness Foundation">
+            <div class="involved-card-icon" aria-hidden="true">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="involved-card-heading">Partner With Us</h3>
+            <p class="involved-card-text">
+              Organizations, yoga studios, and businesses can amplify our mission through strategic
+              partnerships that create lasting community impact.
+            </p>
+            <a href="#" class="btn btn--outline-gold" aria-label="Explore partnership with Asana Wellness Foundation">Explore Partnership</a>
+          </article>
+
+        </div><!-- /.involved-grid -->
+      </div><!-- /.container -->
+    </section><!-- /#involved -->
+
+  </main><!-- /#main-content -->
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Column 1: About Blurb -->
+          <div class="footer-col footer-col--brand">
+            <div class="footer-logo">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="18" cy="18" r="17" stroke="#FBB040" stroke-width="1.5" fill="none" opacity="0.7"/>
+                <circle cx="18" cy="18" r="11" stroke="#660591" stroke-width="1.5" fill="none" opacity="0.8"/>
+                <ellipse cx="18" cy="22" rx="5" ry="3" fill="#FBB040" opacity="0.9"/>
+                <circle cx="18" cy="15.5" r="2.5" fill="#FBB040" opacity="0.9"/>
+                <path d="M13 21 Q11 19 13 17" stroke="#FBB040" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+                <path d="M23 21 Q25 19 23 17" stroke="#FBB040" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+                <circle cx="18" cy="10" r="1.2" fill="#FBB040" opacity="0.9"/>
+              </svg>
+              <span class="footer-logo-text">Asana Wellness Foundation</span>
+            </div>
+            <p class="footer-tagline">"One breath, one pose, one community at a time."</p>
+            <p class="footer-blurb">
+              A 501(c)(3) non-profit organization dedicated to making yoga and holistic wellness
+              accessible to those who need it most — regardless of income, background, or circumstance.
+            </p>
+            <!-- Social Icons -->
+            <div class="footer-social" aria-label="Social media links">
+              <a href="#" class="social-link" aria-label="Follow us on Facebook" rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Follow us on Instagram" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Follow us on X (Twitter)" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Connect with us on LinkedIn" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Watch us on YouTube" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div><!-- /.footer-col--brand -->
+
+          <!-- Column 2: Quick Links -->
+          <nav class="footer-col footer-col--links" aria-label="Footer quick links">
+            <h4 class="footer-col-heading">Quick Links</h4>
+            <ul class="footer-links-list" role="list">
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#programs" class="footer-link">What We Do</a></li>
+              <li><a href="#serve" class="footer-link">Who We Serve</a></li>
+              <li><a href="#impact" class="footer-link">Our Impact</a></li>
+              <li><a href="#values" class="footer-link">Core Values</a></li>
+              <li><a href="#involved" class="footer-link">Get Involved</a></li>
+              <li><a href="#involved" class="footer-link">Donate</a></li>
+              <li><a href="#involved" class="footer-link">Volunteer</a></li>
+            </ul>
+          </nav><!-- /.footer-col--links -->
+
+          <!-- Column 3: Contact -->
+          <address class="footer-col footer-col--contact" aria-label="Contact information">
+            <h4 class="footer-col-heading">Contact Us</h4>
+            <ul class="footer-contact-list" role="list">
+              <li class="footer-contact-item">
+                <i class="fa-solid fa-envelope footer-contact-icon" aria-hidden="true"></i>
+                <a href="mailto:info@asanawellness.org" class="footer-contact-link">info@asanawellness.org</a>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fa-solid fa-phone footer-contact-icon" aria-hidden="true"></i>
+                <a href="tel:+15550000000" class="footer-contact-link">(555) 000-0000</a>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fa-solid fa-location-dot footer-contact-icon" aria-hidden="true"></i>
+                <span>Serving Communities Nationwide</span>
+              </li>
+            </ul>
+          </address><!-- /.footer-col--contact -->
+
+        </div><!-- /.footer-grid -->
+      </div><!-- /.container -->
+    </div><!-- /.footer-main -->
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copyright">&copy; 2025 Asana Wellness Foundation. All rights reserved.</p>
+          <p class="footer-nonprofit">501(c)(3) Non-Profit Organization</p>
+        </div>
+      </div>
+    </div><!-- /.footer-bottom -->
+
+  </footer><!-- /.site-footer -->
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
