@@ -3,12 +3,40 @@
    Extends styles.css for the About Us / Team page
    ============================================================ */
 
+/* ── On the about page the hero is light, so nav links must be dark from the start ── */
+.about-page .navbar {
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 24px rgba(27, 27, 45, 0.08);
+}
+
+.about-page .nav-link {
+  color: var(--color-text-dark);
+}
+
+.about-page .nav-link:hover,
+.about-page .nav-link.active {
+  color: var(--color-purple);
+}
+
+.about-page .nav-link::after {
+  background-color: var(--color-purple);
+}
+
+.about-page .logo-text {
+  color: var(--color-dark);
+}
+
+.about-page .hamburger-line {
+  background-color: var(--color-dark);
+}
+
 /* ── Active nav link state ── */
 .nav-link--active {
-  color: var(--color-gold) !important;
+  color: var(--color-purple) !important;
 }
 .nav-link--active::after {
   width: 100% !important;
+  background-color: var(--color-purple) !important;
 }
 
 /* ============================================================
@@ -16,7 +44,7 @@
    ============================================================ */
 .page-hero {
   position: relative;
-  background: linear-gradient(135deg, var(--color-dark) 0%, #2a0a45 60%, var(--color-purple) 100%);
+  background: linear-gradient(150deg, #f3eeff 0%, #fdf8ff 50%, #fff8ed 100%);
   padding: 160px 2rem 100px;
   text-align: center;
   overflow: hidden;
@@ -27,8 +55,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 20% 50%, rgba(102, 5, 145, 0.3) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 80% 30%, rgba(251, 176, 64, 0.12) 0%, transparent 60%);
+    radial-gradient(ellipse 55% 45% at 15% 60%, rgba(102, 5, 145, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 35% at 85% 25%, rgba(251, 176, 64, 0.09) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -52,16 +80,16 @@
 .page-hero-title {
   font-family: var(--font-heading);
   font-size: clamp(2.2rem, 5vw, 3.6rem);
-  color: #fff;
+  color: var(--color-dark);
   line-height: 1.15;
   margin-bottom: 1.25rem;
 }
 
 .page-hero-sub {
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: #4a4a6a;
   line-height: 1.75;
   max-width: 580px;
   margin: 0 auto;
@@ -322,8 +350,8 @@
 
 .join-team-text p {
   font-family: var(--font-body);
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
   font-size: 1rem;
   line-height: 1.7;
 }
